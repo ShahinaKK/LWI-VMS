@@ -1,6 +1,10 @@
 # **Learnable Weight Initialization for Volumetric Medical Image Segmentation**
 
-[Shahina Kunhimon](https://github.com/ShahinaKK)
+[Shahina Kunhimon](https://github.com/ShahinaKK),
+
+<!-- %[Muzammal Naseer](https://scholar.google.ch/citations?user=tM9xKA8AAAAJ&hl=en),
+%[Salman Khan](https://salman-h-khan.github.io),
+%and [Fahad Shahbaz Khan](https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en) -->
 
 
 > **Abstract:** *Hybrid volumetric medical image segmentation models, combining the advantages of local convolution and global attention, have recently received considerable attention. While mainly focusing on architectural modifications, most existing hybrid approaches still use conventional data-independent weight initialization schemes which restrict their performance due to ignoring the inherent volumetric nature of the medical data. To address this issue, we propose a learnable weight initialization approach that utilizes the available medical training data to effectively learn the contextual and structural cues via the proposed self-supervised objectives. Our approach is easy to integrate into any hybrid model and requires no external training data. Experiments on multi-organ and lung cancer segmentation tasks demonstrate the effectiveness of our approach, leading to state-of-the-art segmentation
@@ -33,7 +37,6 @@ pip install -r requirements.txt
 The following scripts can be used for training our approach on UNETR++ models:
 ```shell
 bash UNETR_PP/init_train_val_synapse.sh
-bash UNETR_PP/init_train_val_lung.sh
 ```
 
 <hr />
@@ -61,7 +64,7 @@ Then, run
 bash evaluation_scripts/run_evaluation_synapse.sh
 ```
 
-3. To reproduce the results of UNETR++ (Ours) on Lung:
+<!-- 3. To reproduce the results of UNETR++ (Ours) on Lung:
     Download [Decathlon-Lung UNETR++_Ours_weights](https://drive.google.com/file/d/1mP7uDjPWhe3PZk7LO-nQskHPjJKfZ3rl/view?usp=drive_link) and paste ```model_final_checkpoint.model``` it in the following path:
 ```shell
 UNETR_PP/unetr_pp/evaluation/unetr_pp_lung_checkpoint/unetr_pp/3d_fullres/Task006_Lung/unetr_pp_trainer_lung__unetr_pp_Plansv2.1/fold_0/
@@ -69,7 +72,7 @@ UNETR_PP/unetr_pp/evaluation/unetr_pp_lung_checkpoint/unetr_pp/3d_fullres/Task00
 Then, run 
 ```shell
 bash evaluation_scripts/run_evaluation_lung.sh
-```
+``` -->
 
 
 
