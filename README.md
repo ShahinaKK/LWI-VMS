@@ -7,18 +7,70 @@
 performance.* 
 <hr />
 
+![main figure](media/main_fig.jpg)
+
+## Installation
+
+1. Create and activate conda environment
+```shell
+conda create --name unetr_pp python=3.8
+conda activate unetr_pp
+```
+2. Install PyTorch and torchvision
+```shell
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 --extra-index-url https://download.pytorch.org/whl/cu113
+```
+3. Install other dependencies
+```shell
+pip install -r requirements.txt
+```
+<hr />
+
+#
+
+## Training
+
+The following scripts can be used for training our approach on UNETR++ models:
+```shell
+bash UNETR_PP/init_train_val_synapse.sh
+bash UNETR_PP/init_train_val_lung.sh
+```
+
+<hr />
+
+
 
 
 ## Evaluation
-
-To reproduce the results of UNETR++ (Ours): 
-1 Download [ Synapse_UNETR++_Ours_weights]([https://drive.google.com/drive/folders/1yNWyPB_8o5_YaR5R_0b_h5rZJqmCs5Kv]) and paste ```model_final_checkpoint.model``` in the following path:
+1. To reproduce the results of UNETR (Ours) on Synapse: Download [ Synapse_UNETR_Ours_weights](https://drive.google.com/file/d/1vtAwX0yV39_IMQRqxK4KVA7RBfzErJMh/view?usp=drive_link) and paste ```Synapse_UNETR_Ours_final.pt``` in the following path:
 ```shell
-unetr_pp/evaluation/unetr_pp_ours_synapse_checkpoint/unetr_pp/3d_fullres/Task002_Synapse/unetr_pp_trainer_synapse__unetr_pp_Plansv2.1/fold_0/
+UNETR/BTCV/pretrained_models/
+```
+Then, run 
+```shell
+python test.py --infer_overlap=0.5 --pretrained_dir='./pretrained_models/' --pretrained_model_name Synapse_UNETR_Ours_final.pt --saved_checkpoint=ckpt
+```
+
+2. To reproduce the results of UNETR++ (Ours) on Synapse:
+   Download [ Synapse_UNETR++_Ours_weights](https://drive.google.com/file/d/1mP7uDjPWhe3PZk7LO-nQskHPjJKfZ3rl/view?usp=drive_link) and paste ```model_final_checkpoint.model``` in the    following path:
+```shell
+UNETR_PP/unetr_pp/evaluation/unetr_pp_ours_synapse_checkpoint/unetr_pp/3d_fullres/Task002_Synapse/unetr_pp_trainer_synapse__unetr_pp_Plansv2.1/fold_0/
 ```
 Then, run 
 ```shell
 bash evaluation_scripts/run_evaluation_synapse.sh
+```
+
+3. To reproduce the results of UNETR++ (Ours) on Lung:
+    Download [Decathlon-Lung UNETR++_Ours_weights](https://drive.google.com/file/d/1mP7uDjPWhe3PZk7LO-nQskHPjJKfZ3rl/view?usp=drive_link) and paste ```model_final_checkpoint.model``` it in the following path:
+```shell
+UNETR_PP/unetr_pp/evaluation/unetr_pp_lung_checkpoint/unetr_pp/3d_fullres/Task006_Lung/unetr_pp_trainer_lung__unetr_pp_Plansv2.1/fold_0/
+```
+Then, run 
+```shell
+bash evaluation_scripts/run_evaluation_lung.sh
+```
+
 
 
 
