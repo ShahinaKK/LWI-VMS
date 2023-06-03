@@ -33,13 +33,18 @@ pip install -r requirements.txt
 #
 
 ## Training
+1. To train Synapse on UNETR++ using our proposed two stage framework: 
+   ```shell
+bash UNETR_PP/init_train_val_synapse.sh
+```
+<hr />
 
-The following scripts can be used for training our approach on UNETR++ models:
+2. To train Synapse on UNETR++ using our proposed two stage framework:
 ```shell
 bash UNETR_PP/init_train_val_synapse.sh
 ```
-
 <hr />
+
 
 
 
@@ -55,7 +60,7 @@ python test.py --infer_overlap=0.5 --pretrained_dir='./pretrained_models/' --pre
 ```
 
 2. To reproduce the results of UNETR++ (Ours) on Synapse:
-   Download [ Synapse_UNETR++_Ours_weights](https://drive.google.com/file/d/1mP7uDjPWhe3PZk7LO-nQskHPjJKfZ3rl/view?usp=drive_link) and paste ```model_final_checkpoint.model``` in the    following path:
+   Download [Synapse_UNETR++_Ours_weights](https://drive.google.com/drive/folders/1jEByRIKB1ZpjdGbTLCElx8v-RnL4gDnW?usp=drive_link) and paste ```model_final_checkpoint.model``` in the    following path:
 ```shell
 UNETR_PP/unetr_pp/evaluation/unetr_pp_ours_synapse_checkpoint/unetr_pp/3d_fullres/Task002_Synapse/unetr_pp_trainer_synapse__unetr_pp_Plansv2.1/fold_0/
 ```
@@ -65,7 +70,7 @@ bash evaluation_scripts/run_evaluation_synapse.sh
 ```
 
 <!-- 3. To reproduce the results of UNETR++ (Ours) on Lung:
-    Download [Decathlon-Lung UNETR++_Ours_weights](https://drive.google.com/file/d/1mP7uDjPWhe3PZk7LO-nQskHPjJKfZ3rl/view?usp=drive_link) and paste ```model_final_checkpoint.model``` it in the following path:
+    Download [Decathlon-Lung UNETR++_Ours_weights](https://drive.google.com/file/d/12ICdIXXba6AOwTMBHxM604Vxm9QQZKiH/view?usp=drive_link) and paste ```model_final_checkpoint.model``` it in the following path:
 ```shell
 UNETR_PP/unetr_pp/evaluation/unetr_pp_lung_checkpoint/unetr_pp/3d_fullres/Task006_Lung/unetr_pp_trainer_lung__unetr_pp_Plansv2.1/fold_0/
 ```
