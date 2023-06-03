@@ -35,13 +35,13 @@ pip install -r requirements.txt
 ## Training
 1. To train Synapse on UNETR++ using our proposed two stage framework: 
    ```shell
-bash UNETR_PP/init_train_val_synapse.sh
+bash UNETR/BTCV/init_train_test.sh init_run1
 ```
 <hr />
 
 2. To train Synapse on UNETR++ using our proposed two stage framework:
 ```shell
-bash UNETR_PP/init_train_val_synapse.sh
+bash UNETR_PP/init_train_val_synapse.sh init_run1
 ```
 <hr />
 
@@ -66,7 +66,7 @@ UNETR_PP/unetr_pp/evaluation/unetr_pp_ours_synapse_checkpoint/unetr_pp/3d_fullre
 ```
 Then, run 
 ```shell
-bash evaluation_scripts/run_evaluation_synapse.sh
+bash evaluation_scripts/run_evaluation_synapse.sh init_run1
 ```
 
 <!-- 3. To reproduce the results of UNETR++ (Ours) on Lung:
@@ -76,7 +76,7 @@ UNETR_PP/unetr_pp/evaluation/unetr_pp_lung_checkpoint/unetr_pp/3d_fullres/Task00
 ```
 Then, run 
 ```shell
-bash evaluation_scripts/run_evaluation_lung.sh
+bash evaluation_scripts/run_evaluation_lung.sh init_run1
 ``` -->
 
 
