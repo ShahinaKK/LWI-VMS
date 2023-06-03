@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 ## Training
 1. To train Synapse on UNETR++ using our proposed two stage framework: 
-   ```shell
+```shell
 bash UNETR/BTCV/init_train_test.sh init_run1
 ```
 <hr />
