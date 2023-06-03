@@ -32,8 +32,8 @@ pip install -r requirements.txt
 
 
 ## Dataset 
-1. For UNETR training pipeline: download the raw data [BTCV challenge dataset](https://www.synapse.org/#!Synapse:syn3193805/wiki/217752). We provide the json file for the synapse split in the following link:
-2. For UNETR++ training pipeline: Follow the instructions in [unetr_plus_plus] (https://github.com/Amshaker/unetr_plus_plus) to download the preprocessed data and to organise dataset folders.
+1. For UNETR training pipeline: download the raw data [BTCV challenge dataset] (https://www.synapse.org/#!Synapse:syn3193805/wiki/217752). We provide the json file for the synapse split in the following link: (https://drive.google.com/file/d/1n6uCL76NXRsZkWmjiUmNGy44uff7-MGf/view?usp=drive_link).
+3. For UNETR++ training pipeline: Follow the instructions in [unetr_plus_plus] (https://github.com/Amshaker/unetr_plus_plus) to download the preprocessed data and to organise the dataset folders.
 
 
 
@@ -55,7 +55,7 @@ bash UNETR_PP/init_train_val_synapse.sh init_run1
 
 
 ## Evaluation
-1. To reproduce the results of UNETR (Ours) on Synapse: Download [ Synapse_UNETR_Ours_weights](https://drive.google.com/file/d/1vtAwX0yV39_IMQRqxK4KVA7RBfzErJMh/view?usp=drive_link) and paste ```Synapse_UNETR_Ours_final.pt``` in the following path:
+1. To reproduce the results of UNETR (Ours) on Synapse: Download [Synapse_UNETR_Ours_weights](https://drive.google.com/file/d/1vtAwX0yV39_IMQRqxK4KVA7RBfzErJMh/view?usp=drive_link) and paste ```Synapse_UNETR_Ours_final.pt``` in the following path:
 ```shell
 UNETR/BTCV/pretrained_models/
 ```
