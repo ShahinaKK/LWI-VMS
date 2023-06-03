@@ -30,7 +30,15 @@ pip install -r requirements.txt
 ```
 <hr />
 
-#
+
+## Dataset 
+1. For UNETR training pipeline: download the raw data [BTCV challenge dataset](https://www.synapse.org/#!Synapse:syn3193805/wiki/217752). We provide the json file for the synapse split in the following link:
+2. For UNETR++ training pipeline: Follow the instructions in [unetr_plus_plus] (https://github.com/Amshaker/unetr_plus_plus) to download the preprocessed data and to organise dataset folders.
+
+
+
+
+
 
 ## Training
 1. To train Synapse on UNETR using our proposed two stage framework: 
@@ -44,9 +52,6 @@ bash UNETR/BTCV/init_train_test.sh init_run1
 bash UNETR_PP/init_train_val_synapse.sh init_run1
 ```
 <hr />
-
-
-
 
 
 ## Evaluation
