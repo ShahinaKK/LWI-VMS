@@ -43,7 +43,7 @@ pip install -r requirements.txt
 ## Training
 1. To train Synapse on UNETR using our proposed two stage framework: 
 ```shell
-bash UNETR/BTCV/init_train_test.sh init_run1
+bash UNETR/init_train_test.sh init_run1
 ```
 <hr />
 
@@ -61,7 +61,7 @@ UNETR/BTCV/pretrained_models/
 ```
 Then, run 
 ```shell
-python test.py --infer_overlap=0.5 --pretrained_dir='./pretrained_models/' --pretrained_model_name Synapse_UNETR_Ours_final.pt --saved_checkpoint=ckpt
+python BTCV/test.py --infer_overlap=0.5 --pretrained_dir='./pretrained_models/' --pretrained_model_name Synapse_UNETR_Ours_final.pt --saved_checkpoint=ckpt
 ```
 
 2. To reproduce the results of UNETR++ (Ours) on Synapse:
