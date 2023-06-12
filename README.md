@@ -1,11 +1,10 @@
 # **Learnable Weight Initialization for Volumetric Medical Image Segmentation**
-![](https://i.imgur.com/waxVImv.png)
 [Shahina Kunhimon](https://github.com/ShahinaKK),
 [Abdelrahman Shaker](https://scholar.google.com/citations?hl=en&user=eEz4Wu4AAAAJ),
 [Muzammal Naseer](https://scholar.google.ch/citations?user=tM9xKA8AAAAJ&hl=en),
 [Salman Khan](https://salman-h-khan.github.io),
 and [Fahad Shahbaz Khan](https://scholar.google.es/citations?user=zvaeYnUAAAAJ&hl=en) 
-
+![](https://i.imgur.com/waxVImv.png)
 
 > **Abstract:** *Hybrid volumetric medical image segmentation models, combining the advantages of local convolution and global attention, have recently received considerable attention. While mainly focusing on architectural modifications, most existing hybrid approaches still use conventional data-independent weight initialization schemes which restrict their performance due to ignoring the inherent volumetric nature of the medical data. To address this issue, we propose a learnable weight initialization approach that utilizes the available medical training data to effectively learn the contextual and structural cues via the proposed self-supervised objectives. Our approach is easy to integrate into any hybrid model and requires no external training data. Experiments on multi-organ and lung cancer segmentation tasks demonstrate the effectiveness of our approach, leading to state-of-the-art segmentation
 performance.* 
@@ -20,8 +19,8 @@ performance.*
 2. [Installation](#Installation)
 3. [Dataset](#Dataset)
 4. [Training](#Training)
-5. [Results](#Results)
-6. [Evaluation](#Evaluation)
+5. [Evaluation](#Evaluation)
+6. [Results](#Results)
 7. [Contact](#Contact)
 8. [References](#References)
 
@@ -78,13 +77,6 @@ bash UNETR_PP/init_train_val_synapse.sh init_run1
 ```
 <hr />
 
-
-## Results
- ![Results_table](media/table_1.png)
- ![Qualitative_Synapse](media/Qualitative_Synapse.png)
-
-
-
 ## Evaluation
 ### Synapse Dataset
 ##### <ins>UNETR (Ours)</ins>
@@ -106,6 +98,22 @@ Then, run
 ```shell
 bash evaluation_scripts/run_evaluation_synapse.sh init_run1
 ```
+
+
+## Results
+##### Quantitative Results:
+Our approach improves the SOTA on Synapse. We observe large variance in the performance of existing methods across different organs, In comparison, our approach consistently performs better while increasing the overall performance.
+
+ ![Results_table](media/table_1.png)
+ ##### Qualitative Results:
+The proposed data-dependent initialization scheme, when integrated with UNETR++, improves the overall segmentation performance by accurately segmenting the organs and delineating organ boundaries.
+
+ ![Qualitative_Synapse](media/Qualitative_Synapse.png)
+ 
+
+
+
+
 
 <!-- 3. To reproduce the results of UNETR++ (Ours) on Lung:
     Download [Decathlon-Lung UNETR++_Ours_weights](https://drive.google.com/file/d/12ICdIXXba6AOwTMBHxM604Vxm9QQZKiH/view?usp=drive_link) and paste ```model_final_checkpoint.model``` it in the following path:
