@@ -20,7 +20,7 @@ performance.*
 2. [Installation](#Installation)
 3. [Dataset](#Dataset)
 4. [Training](#Training)
-5. [Results].(#Results)
+5. [Results](#Results)
 6. [Evaluation](#Evaluation)
 7. [Contact](#Contact)
 8. [References](#References)
@@ -80,6 +80,7 @@ bash UNETR_PP/init_train_val_synapse.sh init_run1
 
 
 ## Results
+
 
 
 ## Evaluation
