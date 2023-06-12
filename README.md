@@ -80,6 +80,8 @@ bash UNETR_PP/init_train_val_synapse.sh init_run1
 
 
 ## Results
+ ![Results_table](media/table_1.png)
+ ![Qualitative_Synapse](media/Qualitative_Synapse.png)
 
 
 
