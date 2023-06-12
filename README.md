@@ -46,7 +46,6 @@ pip install -r requirements.txt
 
 
 ## Dataset 
-<sup>((#contents))</sup>
 #### For UNETR training pipeline
 1. Download the raw data [Synapse dataset] (https://www.synapse.org/#!Synapse:syn3193805/wiki/217752).
 3. Download the json file for the synapse data split given in the following link: (https://drive.google.com/file/d/1n6uCL76NXRsZkWmjiUmNGy44uff7-MGf/view?usp=drive_link).
@@ -58,7 +57,6 @@ pip install -r requirements.txt
 
 
 ## Training
-<sup>((#contents))</sup>
 1. To train Synapse on UNETR using our proposed two stage framework: 
 ```shell
 bash UNETR/init_train_test.sh init_run1
@@ -73,7 +71,6 @@ bash UNETR_PP/init_train_val_synapse.sh init_run1
 
 
 ## Evaluation
-<sup>([top](#contents))</sup>
 #### UNETR (Ours) on Synapse
 Download [Synapse_UNETR_Ours_weights] (https://drive.google.com/file/d/1vtAwX0yV39_IMQRqxK4KVA7RBfzErJMh/view?usp=drive_link) and paste ```Synapse_UNETR_Ours_final.pt``` in the path: ```UNETR/BTCV/pretrained_models/ ``` . Then, run 
 ```shell
@@ -105,12 +102,12 @@ bash evaluation_scripts/run_evaluation_lung.sh init_run1
 
 
 ## Contact
-<sup>([top](#contents))</sup>
+
 Should you have any questions, please create an issue in this repository or contact shahina.kunhimon@mbzuai.ac.ae
 <hr>
 
 ## References
-<sup>([top](#contents))</sup>
+
 Our code is build on the repositories of [UNETR](https://github.com/Project-MONAI/research-contributions/tree/main/UNETR/BTCV) and [UNETR++](https://github.com/Amshaker/unetr_plus_plus). We thank them for releasing their code.
 
 <hr>
