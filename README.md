@@ -12,7 +12,16 @@ performance.*
 
 <hr />
 
-
+## Citation
+If you find our work, this repository, or pretrained models useful, please consider giving a star :star: and citation.
+```bibtex
+@article{kunhimon2023learnable,
+  title={Learnable Weight Initialization for Volumetric Medical Image Segmentation},
+  author={Kunhimon, Shahina and Shaker, Abdelrahman and Naseer, Muzammal and Khan, Salman and Khan, Fahad Shahbaz},
+  journal={arXiv preprint arXiv:2306.09320},
+  year={2023}
+}
+```
 
 
 ## Contents
